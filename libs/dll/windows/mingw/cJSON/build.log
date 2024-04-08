@@ -1,0 +1,42 @@
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/ProgramData/chocolatey/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: cJSON
+-- current platform: Windows 
+-- current compiler: mingw
+-- libs in: D:/a/libs/libs/module/cJSON/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/cJSON/src
+-- SRCS:D:/a/libs/libs/module/cJSON/src/cJSON.c
+-- 1.7.15
+-- 1.7.15
+-- new version: 1.7.15
+-- old version: 1.7.15
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:242 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- extra_lib_path: 
+-- extra_lib_path: 
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:265 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Configuring done (23.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/cJSON/build
+[ 50%] [32mBuilding C object CMakeFiles/cJSON.dir/src/cJSON.c.obj[0m
+[100%] [32m[1mLinking C shared library libcJSON.dll[0m
+[100%] Built target cJSON
+[36mInstall the project...[0m
+-- Install configuration: ""

@@ -1,0 +1,49 @@
+-- The C compiler identification is MSVC 19.35.32217.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: unittest
+-- current platform: Windows 
+-- current compiler: msvc
+-- libs in: D:/a/libs/libs/module/unittest/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/unittest/src
+-- SRCS:D:/a/libs/libs/module/unittest/src/unity.c
+-- 0.0.3
+-- 0.0.3
+-- new version: 0.0.3
+-- old version: 0.0.3
+-- extra_lib_path: D:/a/libs/libs/module/unittest/../../libs/bin/msvc
+-- extra_lib_path: D:/a/libs/libs/module/unittest/../../libs/bin/msvc
+-- INCLUDE_path: D:/a/libs/libs/module/unittest/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+-- Configuring done (46.6s)
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:260 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:283 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/unittest/build
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule D:/a/libs/libs/module/unittest/CMakeLists.txt
+  unity.c
+     Creating library D:/a/libs/libs/module/unittest/build/Debug/unittest.lib and object D:/a/libs/libs/module/unittest/build/Debug/unittest.exp
+  unittest.vcxproj -> D:\a\libs\libs\module\unittest\build\Debug\unittest.dll
+  Building Custom Rule D:/a/libs/libs/module/unittest/CMakeLists.txt
+  1>
+  -- Install configuration: "Debug"

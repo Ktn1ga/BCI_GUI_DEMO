@@ -1,0 +1,211 @@
+CMake Warning:
+  Ignoring empty string ("") provided on the command line.
+
+
+-- The C compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: data_manager
+-- current platform: Linux 
+-- libs in: /home/runner/work/libs/libs/module/data_manager/../../libs
+-- SRC_DIRS:/home/runner/work/libs/libs/module/data_manager/src
+-- SRCS:/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c/home/runner/work/libs/libs/module/data_manager/src/data_manager.c/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c
+-- 0.1.7
+-- 0.1.6
+-- new version: 0.1.7
+-- old version: 0.1.6
+-- new version found!
+-- extra_lib_path: /home/runner/work/libs/libs/module/data_manager/../../libs/bin/linux
+-- extra_lib_path: /home/runner/work/libs/libs/module/data_manager/../../libs/bin/linux
+-- INCLUDE_path: /home/runner/work/libs/libs/module/data_manager/include
+-- INCLUDE_path: /home/runner/work/libs/libs/libs/include
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/work/libs/libs/module/data_manager/build
+[ 25%] Building C object CMakeFiles/data_manager.dir/src/data_load_ebdf.c.o
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c: In function ‘eeg_file_open’:
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c:16:16: warning: implicit declaration of function ‘fopen64’; did you mean ‘fopen’? [-Wimplicit-function-declaration]
+   16 | #define fopeno fopen64
+      |                ^~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c:199:10: note: in expansion of macro ‘fopeno’
+  199 |   file = fopeno(path, "rb");
+      |          ^~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c:199:8: warning: assignment to ‘FILE *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  199 |   file = fopeno(path, "rb");
+      |        ^
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c: In function ‘eeg_file_close’:
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c:14:16: warning: implicit declaration of function ‘fseeko64’; did you mean ‘fseeko’? [-Wimplicit-function-declaration]
+   14 | #define fseeko fseeko64
+      |                ^~~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c:455:7: note: in expansion of macro ‘fseeko’
+  455 |       fseeko(hdr->file_hdl, 236LL, SEEK_SET);
+      |       ^~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c: In function ‘edflib_check_edf_file’:
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c:15:16: warning: implicit declaration of function ‘ftello64’; did you mean ‘ftello’? [-Wimplicit-function-declaration]
+   15 | #define ftello ftello64
+      |                ^~~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_load_ebdf.c:2479:6: note: in expansion of macro ‘ftello’
+ 2479 |   if(ftello(inputfile)!=(edfhdr->recordsize * edfhdr->datarecords + edfhdr->hdrsize))
+      |      ^~~~~~
+[ 50%] Building C object CMakeFiles/data_manager.dir/src/data_manager.c.o
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c: In function ‘init_data_queue’:
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:155:28: warning: passing argument 1 of ‘osal_thread_mutex_init’ from incompatible pointer type [-Wincompatible-pointer-types]
+  155 |     osal_thread_mutex_init(&mutex,NULL);
+      |                            ^~~~~~
+      |                            |
+      |                            pthread_mutex_t *
+In file included from /home/runner/work/libs/libs/module/data_manager/src/data_manager.c:31:
+/home/runner/work/libs/libs/libs/include/osal/osal_thread.h:74:58: note: expected ‘void **’ but argument is of type ‘pthread_mutex_t *’
+   74 | SHARED_EXPORT int osal_thread_mutex_init(thread_mutex_t *mutex, const thread_mutexattr_t *attr);
+      |                                          ~~~~~~~~~~~~~~~~^~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c: In function ‘data_dequeue’:
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:172:28: warning: passing argument 1 of ‘osal_thread_mutex_lock’ from incompatible pointer type [-Wincompatible-pointer-types]
+  172 |     osal_thread_mutex_lock(&mutex);
+      |                            ^~~~~~
+      |                            |
+      |                            pthread_mutex_t *
+In file included from /home/runner/work/libs/libs/module/data_manager/src/data_manager.c:31:
+/home/runner/work/libs/libs/libs/include/osal/osal_thread.h:82:58: note: expected ‘void **’ but argument is of type ‘pthread_mutex_t *’
+   82 | SHARED_EXPORT int osal_thread_mutex_lock(thread_mutex_t *mutex);
+      |                                          ~~~~~~~~~~~~~~~~^~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:187:30: warning: passing argument 1 of ‘osal_thread_mutex_unlock’ from incompatible pointer type [-Wincompatible-pointer-types]
+  187 |     osal_thread_mutex_unlock(&mutex);
+      |                              ^~~~~~
+      |                              |
+      |                              pthread_mutex_t *
+In file included from /home/runner/work/libs/libs/module/data_manager/src/data_manager.c:31:
+/home/runner/work/libs/libs/libs/include/osal/osal_thread.h:90:60: note: expected ‘void **’ but argument is of type ‘pthread_mutex_t *’
+   90 | SHARED_EXPORT int osal_thread_mutex_unlock(thread_mutex_t *mutex);
+      |                                            ~~~~~~~~~~~~~~~~^~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c: In function ‘data_normalize_thread_code’:
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:213:4: warning: implicit declaration of function ‘osal_sleep_ms’ [-Wimplicit-function-declaration]
+  213 |    osal_sleep_ms(1000);
+      |    ^~~~~~~~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c: In function ‘data_remote_thread_code’:
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:303:63: warning: passing argument 4 of ‘socket_setsockopt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  303 |        socket_setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &flags, sizeof(flags));
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               int *
+In file included from /home/runner/work/libs/libs/module/data_manager/src/data_manager.c:28:
+/home/runner/work/libs/libs/libs/include/osal/osal_socket.h:58:85: note: expected ‘const char *’ but argument is of type ‘int *’
+   58 | SHARED_EXPORT int socket_setsockopt(int socket, int level, int optname, const char* optval, socklen_t optlen) ;
+      |                                                                         ~~~~~~~~~~~~^~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:304:63: warning: passing argument 4 of ‘socket_setsockopt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  304 |        socket_setsockopt(server_fd, SOL_SOCKET, SO_KEEPALIVE, &flags, sizeof(flags));
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               int *
+In file included from /home/runner/work/libs/libs/module/data_manager/src/data_manager.c:28:
+/home/runner/work/libs/libs/libs/include/osal/osal_socket.h:58:85: note: expected ‘const char *’ but argument is of type ‘int *’
+   58 | SHARED_EXPORT int socket_setsockopt(int socket, int level, int optname, const char* optval, socklen_t optlen) ;
+      |                                                                         ~~~~~~~~~~~~^~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c: In function ‘data_open’:
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:457:8: warning: implicit declaration of function ‘sprintf_s’; did you mean ‘sprintf’? [-Wimplicit-function-declaration]
+  457 |        sprintf_s(p_data_mng->filename, sizeof(p_data_mng->filename), "%s/%s", DATA_MANAGER_BASE_PATH, name);
+      |        ^~~~~~~~~
+      |        sprintf
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:475:19: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  475 |            return -1;
+      |                   ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:482:19: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  482 |            return -1;
+      |                   ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:497:19: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  497 |            return -1;
+      |                   ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:513:19: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  513 |            return -1;
+      |                   ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:682:9: warning: implicit declaration of function ‘_findclose’; did you mean ‘fclose’? [-Wimplicit-function-declaration]
+  682 |         _findclose(fHandle);
+      |         ^~~~~~~~~~
+      |         fclose
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:685:20: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  685 |             return (-1);
+      |                    ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:772:19: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  772 |             return(-1);
+      |                   ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:782:17: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  782 |           return(-1);
+      |                 ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:791:23: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  791 |                 return(-1);
+      |                       ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:804:28: warning: assignment to ‘char **’ from incompatible pointer type ‘char *’ [-Wincompatible-pointer-types]
+  804 |             s_channel_info = (char*)malloc(sizeof(char*)*(p_data_mng->frame_channel_num+1));
+      |                            ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:811:27: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  811 |                     return(-1);
+      |                           ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:817:28: warning: assignment to ‘char **’ from incompatible pointer type ‘char *’ [-Wincompatible-pointer-types]
+  817 |             s_channel_info = (char*)malloc(sizeof(char*)*p_data_mng->frame_channel_num);
+      |                            ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:824:27: warning: returning ‘int’ from a function with return type ‘data_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  824 |                     return(-1);
+      |                           ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c: In function ‘data_write’:
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:1094:33: warning: ‘sprintf’ writing a terminating nul past the end of the destination [-Wformat-overflow=]
+ 1094 |                 sprintf(temp,"%d", s_label->task_label[i]);
+      |                                 ^
+/home/runner/work/libs/libs/module/data_manager/src/data_manager.c:1094:17: note: ‘sprintf’ output between 2 and 12 bytes into a destination of size 1
+ 1094 |                 sprintf(temp,"%d", s_label->task_label[i]);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 75%] Building C object CMakeFiles/data_manager.dir/src/data_store_edbf.c.o
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c: In function ‘eeg_information_store’:
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:307:33: warning: comparison between pointer and integer
+  307 |             while(*label_number != NULL && *label_number != ',')
+      |                                 ^~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:313:35: warning: comparison between pointer and integer
+  313 |             while(*label_meanning != NULL && *label_meanning != ',')
+      |                                   ^~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:320:30: warning: comparison between pointer and integer
+  320 |             if(*label_number == NULL||*label_meanning == NULL)
+      |                              ^~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:320:55: warning: comparison between pointer and integer
+  320 |             if(*label_number == NULL||*label_meanning == NULL)
+      |                                                       ^~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c: In function ‘edfopen_file_writeonly’:
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:15:16: warning: implicit declaration of function ‘fopen64’; did you mean ‘fopen’? [-Wimplicit-function-declaration]
+   15 | #define fopeno fopen64
+      |                ^~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:434:10: note: in expansion of macro ‘fopeno’
+  434 |   file = fopeno(path, "wb");
+      |          ^~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:434:8: warning: assignment to ‘FILE *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  434 |   file = fopeno(path, "wb");
+      |        ^
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c: In function ‘edfclose_file’:
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:13:16: warning: implicit declaration of function ‘fseeko64’; did you mean ‘fseeko’? [-Wimplicit-function-declaration]
+   13 | #define fseeko fseeko64
+      |                ^~~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:1287:7: note: in expansion of macro ‘fseeko’
+ 1287 |       fseeko(hdr->file_hdl, 236LL, SEEK_SET);
+      |       ^~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c: In function ‘eeg_information_store’:
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:331:9: warning: ‘free’ called on unallocated object ‘lab_num’ [-Wfree-nonheap-object]
+  331 |         free(lab_num);
+      |         ^~~~~~~~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:298:14: note: declared here
+  298 |         char lab_num[10];
+      |              ^~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:332:9: warning: ‘free’ called on unallocated object ‘lab_mes’ [-Wfree-nonheap-object]
+  332 |         free(lab_mes);
+      |         ^~~~~~~~~~~~~
+/home/runner/work/libs/libs/module/data_manager/src/data_store_edbf.c:299:14: note: declared here
+  299 |         char lab_mes[20];
+      |              ^~~~~~~
+[100%] Linking C shared library libdata_manager.so
+[100%] Built target data_manager
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/runner/work/libs/libs/module/data_manager/../../libs/bin/linux/libdata_manager.so
+-- Set runtime path of "/home/runner/work/libs/libs/module/data_manager/../../libs/bin/linux/libdata_manager.so" to ""
+-- Installing: /home/runner/work/libs/libs/module/data_manager/../../libs/bin/linux/data_manager_linux_version.txt
+-- Installing: /home/runner/work/libs/libs/module/data_manager/../../libs/include/data_manager/data_manager.h
+-- Installing: /home/runner/work/libs/libs/module/data_manager/../../libs/include/data_manager/export_global.h
+-- Up-to-date: /home/runner/work/libs/libs/module/data_manager/../../libs/include/data_manager

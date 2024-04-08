@@ -1,0 +1,11 @@
+{
+   "trial_num":20,
+   "class_num":2,
+   "trial_table":"1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2",
+   "lable":"1,2",
+   "lable_info":"left,right",
+   "time_ms":"4000,4000",
+   "sleep_ms":"1500,1500",
+   "guide_device_name":"vr/01",
+   "feedback_device_name":"robot/01"
+}

@@ -1,0 +1,57 @@
+CMake Warning:
+  Ignoring empty string ("") provided on the command line.
+
+
+-- The C compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- compiler name: mingw
+-- name: osal
+-- current platform: Linux 
+-- libs in: /home/runner/work/libs/libs/module/osal/../../libs
+-- SRC_DIRS:/home/runner/work/libs/libs/module/osal/src
+-- SRCS:/home/runner/work/libs/libs/module/osal/src/osal_com.c/home/runner/work/libs/libs/module/osal/src/osal_common.c/home/runner/work/libs/libs/module/osal/src/osal_ringbuffer.c/home/runner/work/libs/libs/module/osal/src/osal_socket.c/home/runner/work/libs/libs/module/osal/src/osal_thread.c
+-- 0.0.6
+-- 0.0.6
+-- new version: 0.0.6
+-- old version: 0.0.6
+CMake Warning at /home/runner/work/libs/libs/libs/tools/build_lib.cmake:242 (message):
+  new version not found!
+Call Stack (most recent call first):
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:36 (project_share_lib)
+
+
+-- extra_lib_path: 
+-- extra_lib_path: 
+CMake Warning at /home/runner/work/libs/libs/libs/tools/build_lib.cmake:265 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:36 (project_share_lib)
+
+
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/work/libs/libs/module/osal/build
+[ 16%] Building C object CMakeFiles/osal.dir/src/osal_com.c.o
+/home/runner/work/libs/libs/module/osal/src/osal_com.c: In function ‘com_send’:
+/home/runner/work/libs/libs/module/osal/src/osal_com.c:386:13: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  386 |         ptr = sbuf;
+      |             ^
+/home/runner/work/libs/libs/module/osal/src/osal_com.c:387:13: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  387 |         end = sbuf + sbuf_len;
+      |             ^
+[ 33%] Building C object CMakeFiles/osal.dir/src/osal_common.c.o
+[ 50%] Building C object CMakeFiles/osal.dir/src/osal_ringbuffer.c.o
+[ 66%] Building C object CMakeFiles/osal.dir/src/osal_socket.c.o
+[ 83%] Building C object CMakeFiles/osal.dir/src/osal_thread.c.o
+[100%] Linking C shared library libosal.so
+[100%] Built target osal
+Install the project...
+-- Install configuration: ""

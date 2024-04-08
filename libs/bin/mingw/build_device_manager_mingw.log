@@ -1,0 +1,106 @@
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/ProgramData/chocolatey/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: device_manager
+-- current platform: Windows 
+-- current compiler: mingw
+-- libs in: D:/a/libs/libs/module/device_manager/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/device_manager/src
+-- SRCS:D:/a/libs/libs/module/device_manager/src/device_manager.c
+-- 0.0.5
+-- 0.0.5
+-- new version: 0.0.5
+-- old version: 0.0.5
+-- extra_lib_path: D:/a/libs/libs/module/device_manager/../../libs/bin/mingw
+-- extra_lib_path: D:/a/libs/libs/module/device_manager/../../libs/bin/mingw
+-- INCLUDE_path: D:/a/libs/libs/module/device_manager/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+-- Configuring done (16.0s)
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:260 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:283 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/device_manager/build
+[ 50%] Building C object CMakeFiles/device_manager.dir/src/device_manager.c.obj
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'general_device_register':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:50:14: warning: passing argument 1 of 'snprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+   50 |     snprintf(&(s_impls_path[DEVICE_TYPE_GENERAL][id].path), MAX_PATH_LENGTH, "%s/%02d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from D:\a\libs\libs\module\device_manager\src\device_manager.c:12:
+c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\stdio.h:451:21: note: expected 'char *' but argument is of type 'char (*)[128]'
+  451 | int snprintf (char *__stream, size_t __n, const char *__format, ...)
+      |               ~~~~~~^~~~~~~~
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'eeg_device_register':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:73:14: warning: passing argument 1 of 'snprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+   73 |     snprintf(&(s_impls_path[DEVICE_TYPE_EEG][id].path), MAX_PATH_LENGTH, "%s/%d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from D:\a\libs\libs\module\device_manager\src\device_manager.c:12:
+c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\stdio.h:451:21: note: expected 'char *' but argument is of type 'char (*)[128]'
+  451 | int snprintf (char *__stream, size_t __n, const char *__format, ...)
+      |               ~~~~~~^~~~~~~~
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'vr_device_register':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:96:14: warning: passing argument 1 of 'snprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+   96 |     snprintf(&(s_impls_path[DEVICE_TYPE_VR][id].path), MAX_PATH_LENGTH, "%s/%d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from D:\a\libs\libs\module\device_manager\src\device_manager.c:12:
+c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\stdio.h:451:21: note: expected 'char *' but argument is of type 'char (*)[128]'
+  451 | int snprintf (char *__stream, size_t __n, const char *__format, ...)
+      |               ~~~~~~^~~~~~~~
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'robot_device_register':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:119:14: warning: passing argument 1 of 'snprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  119 |     snprintf(&(s_impls_path[DEVICE_TYPE_ROBOT][id].path), MAX_PATH_LENGTH, "%s/%02d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from D:\a\libs\libs\module\device_manager\src\device_manager.c:12:
+c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\stdio.h:451:21: note: expected 'char *' but argument is of type 'char (*)[128]'
+  451 | int snprintf (char *__stream, size_t __n, const char *__format, ...)
+      |               ~~~~~~^~~~~~~~
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'device_open':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:152:16: warning: returning 'int' from a function with return type 'device_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  152 |         return -1;
+      |                ^
+D:\a\libs\libs\module\device_manager\src\device_manager.c:155:19: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  155 |     int _handle = (device_handle_t)((i << HANDLE_TYPE_OFFSET) | (j & HANDLE_ID_MASK));
+      |                   ^
+D:\a\libs\libs\module\device_manager\src\device_manager.c:160:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  160 |     return (device_handle_t)_handle;
+      |            ^
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'device_read':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:166:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  166 |     int _handle = (int)handle;
+      |                   ^
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'device_write':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:176:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  176 |     int _handle = (int)handle;
+      |                   ^
+D:\a\libs\libs\module\device_manager\src\device_manager.c: In function 'device_control':
+D:\a\libs\libs\module\device_manager\src\device_manager.c:186:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  186 |     int _handle = (int)handle;
+      |                   ^
+[100%] Linking C shared library libdevice_manager.dll
+[100%] Built target device_manager
+Install the project...
+-- Install configuration: ""

@@ -1,0 +1,45 @@
+CMake Warning:
+  Ignoring empty string ("") provided on the command line.
+
+
+-- The C compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: trial_manager
+-- current platform: Linux 
+-- libs in: /home/runner/work/libs/libs/module/trial_manager/../../libs
+-- SRC_DIRS:/home/runner/work/libs/libs/module/trial_manager/src
+-- SRCS:/home/runner/work/libs/libs/module/trial_manager/src/trial_manager.c
+-- 0.0.3
+-- 0.0.3
+-- new version: 0.0.3
+-- old version: 0.0.3
+CMake Warning at /home/runner/work/libs/libs/libs/tools/build_lib.cmake:242 (message):
+  new version not found!
+Call Stack (most recent call first):
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- extra_lib_path: /home/runner/work/libs/libs/module/trial_manager/../../libs/dll/linux//osal;/home/runner/work/libs/libs/module/trial_manager/../../libs/dll/linux//cJSON
+-- extra_lib_path: 
+CMake Warning at /home/runner/work/libs/libs/libs/tools/build_lib.cmake:265 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/work/libs/libs/module/trial_manager/build
+[ 50%] Building C object CMakeFiles/trial_manager.dir/src/trial_manager.c.o
+[100%] Linking C shared library libtrial_manager.so
+[100%] Built target trial_manager
+Install the project...
+-- Install configuration: ""

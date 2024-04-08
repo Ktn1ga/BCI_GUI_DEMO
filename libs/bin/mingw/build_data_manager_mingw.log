@@ -1,0 +1,148 @@
+-- The C compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/ProgramData/chocolatey/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: data_manager
+-- current platform: Windows 
+-- current compiler: mingw
+-- libs in: D:/a/libs/libs/module/data_manager/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/data_manager/src
+-- SRCS:D:/a/libs/libs/module/data_manager/src/data_load_ebdf.cD:/a/libs/libs/module/data_manager/src/data_manager.cD:/a/libs/libs/module/data_manager/src/data_store_edbf.c
+-- 0.1.7
+-- 0.1.6
+-- new version: 0.1.7
+-- old version: 0.1.6
+-- new version found!
+-- extra_lib_path: D:/a/libs/libs/module/data_manager/../../libs/bin/mingw
+-- extra_lib_path: D:/a/libs/libs/module/data_manager/../../libs/bin/mingw
+-- INCLUDE_path: D:/a/libs/libs/module/data_manager/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+-- Configuring done (14.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/data_manager/build
+[ 25%] Building C object CMakeFiles/data_manager.dir/src/data_load_ebdf.c.obj
+[ 50%] Building C object CMakeFiles/data_manager.dir/src/data_manager.c.obj
+D:\a\libs\libs\module\data_manager\src\data_manager.c: In function 'init_data_queue':
+D:\a\libs\libs\module\data_manager\src\data_manager.c:155:28: warning: passing argument 1 of 'osal_thread_mutex_init' from incompatible pointer type [-Wincompatible-pointer-types]
+  155 |     osal_thread_mutex_init(&mutex,NULL);
+      |                            ^~~~~~
+      |                            |
+      |                            struct pthread_mutex_t_ **
+In file included from D:\a\libs\libs\module\data_manager\src\data_manager.c:31:
+D:/a/libs/libs/libs/include/osal/osal_thread.h:74:58: note: expected 'void **' but argument is of type 'struct pthread_mutex_t_ **'
+   74 | SHARED_EXPORT int osal_thread_mutex_init(thread_mutex_t *mutex, const thread_mutexattr_t *attr);
+      |                                          ~~~~~~~~~~~~~~~~^~~~~
+D:\a\libs\libs\module\data_manager\src\data_manager.c: In function 'data_dequeue':
+D:\a\libs\libs\module\data_manager\src\data_manager.c:172:28: warning: passing argument 1 of 'osal_thread_mutex_lock' from incompatible pointer type [-Wincompatible-pointer-types]
+  172 |     osal_thread_mutex_lock(&mutex);
+      |                            ^~~~~~
+      |                            |
+      |                            struct pthread_mutex_t_ **
+D:/a/libs/libs/libs/include/osal/osal_thread.h:82:58: note: expected 'void **' but argument is of type 'struct pthread_mutex_t_ **'
+   82 | SHARED_EXPORT int osal_thread_mutex_lock(thread_mutex_t *mutex);
+      |                                          ~~~~~~~~~~~~~~~~^~~~~
+D:\a\libs\libs\module\data_manager\src\data_manager.c:187:30: warning: passing argument 1 of 'osal_thread_mutex_unlock' from incompatible pointer type [-Wincompatible-pointer-types]
+  187 |     osal_thread_mutex_unlock(&mutex);
+      |                              ^~~~~~
+      |                              |
+      |                              struct pthread_mutex_t_ **
+D:/a/libs/libs/libs/include/osal/osal_thread.h:90:60: note: expected 'void **' but argument is of type 'struct pthread_mutex_t_ **'
+   90 | SHARED_EXPORT int osal_thread_mutex_unlock(thread_mutex_t *mutex);
+      |                                            ~~~~~~~~~~~~~~~~^~~~~
+D:\a\libs\libs\module\data_manager\src\data_manager.c: In function 'data_normalize_thread_code':
+D:\a\libs\libs\module\data_manager\src\data_manager.c:213:4: warning: implicit declaration of function 'osal_sleep_ms' [-Wimplicit-function-declaration]
+  213 |    osal_sleep_ms(1000);
+      |    ^~~~~~~~~~~~~
+D:\a\libs\libs\module\data_manager\src\data_manager.c: In function 'data_remote_thread_code':
+D:\a\libs\libs\module\data_manager\src\data_manager.c:303:63: warning: passing argument 4 of 'socket_setsockopt' from incompatible pointer type [-Wincompatible-pointer-types]
+  303 |        socket_setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &flags, sizeof(flags));
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               int *
+In file included from D:\a\libs\libs\module\data_manager\src\data_manager.c:28:
+D:/a/libs/libs/libs/include/osal/osal_socket.h:58:85: note: expected 'const char *' but argument is of type 'int *'
+   58 | SHARED_EXPORT int socket_setsockopt(int socket, int level, int optname, const char* optval, socklen_t optlen) ;
+      |                                                                         ~~~~~~~~~~~~^~~~~~
+D:\a\libs\libs\module\data_manager\src\data_manager.c:304:63: warning: passing argument 4 of 'socket_setsockopt' from incompatible pointer type [-Wincompatible-pointer-types]
+  304 |        socket_setsockopt(server_fd, SOL_SOCKET, SO_KEEPALIVE, &flags, sizeof(flags));
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               int *
+D:/a/libs/libs/libs/include/osal/osal_socket.h:58:85: note: expected 'const char *' but argument is of type 'int *'
+   58 | SHARED_EXPORT int socket_setsockopt(int socket, int level, int optname, const char* optval, socklen_t optlen) ;
+      |                                                                         ~~~~~~~~~~~~^~~~~~
+D:\a\libs\libs\module\data_manager\src\data_manager.c: In function 'data_open':
+D:\a\libs\libs\module\data_manager\src\data_manager.c:475:19: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  475 |            return -1;
+      |                   ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:482:19: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  482 |            return -1;
+      |                   ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:497:19: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  497 |            return -1;
+      |                   ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:513:19: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  513 |            return -1;
+      |                   ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:685:20: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  685 |             return (-1);
+      |                    ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:772:19: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  772 |             return(-1);
+      |                   ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:782:17: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  782 |           return(-1);
+      |                 ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:791:23: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  791 |                 return(-1);
+      |                       ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:804:28: warning: assignment to 'char **' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+  804 |             s_channel_info = (char*)malloc(sizeof(char*)*(p_data_mng->frame_channel_num+1));
+      |                            ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:811:27: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  811 |                     return(-1);
+      |                           ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:817:28: warning: assignment to 'char **' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+  817 |             s_channel_info = (char*)malloc(sizeof(char*)*p_data_mng->frame_channel_num);
+      |                            ^
+D:\a\libs\libs\module\data_manager\src\data_manager.c:824:27: warning: returning 'int' from a function with return type 'data_handle_t' {aka 'void *'} makes pointer from integer without a cast [-Wint-conversion]
+  824 |                     return(-1);
+      |                           ^
+[ 75%] Building C object CMakeFiles/data_manager.dir/src/data_store_edbf.c.obj
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c: In function 'eeg_information_store':
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:307:33: warning: comparison between pointer and integer
+  307 |             while(*label_number != NULL && *label_number != ',')
+      |                                 ^~
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:313:35: warning: comparison between pointer and integer
+  313 |             while(*label_meanning != NULL && *label_meanning != ',')
+      |                                   ^~
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:320:30: warning: comparison between pointer and integer
+  320 |             if(*label_number == NULL||*label_meanning == NULL)
+      |                              ^~
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:320:55: warning: comparison between pointer and integer
+  320 |             if(*label_number == NULL||*label_meanning == NULL)
+      |                                                       ^~
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:331:9: warning: 'free' called on unallocated object 'lab_num' [-Wfree-nonheap-object]
+  331 |         free(lab_num);
+      |         ^~~~~~~~~~~~~
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:298:14: note: declared here
+  298 |         char lab_num[10];
+      |              ^~~~~~~
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:332:9: warning: 'free' called on unallocated object 'lab_mes' [-Wfree-nonheap-object]
+  332 |         free(lab_mes);
+      |         ^~~~~~~~~~~~~
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c:299:14: note: declared here
+  299 |         char lab_mes[20];
+      |              ^~~~~~~
+[100%] Linking C shared library libdata_manager.dll
+[100%] Built target data_manager
+Install the project...
+-- Install configuration: ""
+-- Installing: D:/a/libs/libs/module/data_manager/../../libs/bin/mingw/libdata_manager.dll.a
+-- Installing: D:/a/libs/libs/module/data_manager/../../libs/bin/mingw/libdata_manager.dll
+-- Installing: D:/a/libs/libs/module/data_manager/../../libs/bin/mingw/data_manager_mingw_version.txt
+-- Installing: D:/a/libs/libs/module/data_manager/../../libs/include/data_manager/data_manager.h
+-- Installing: D:/a/libs/libs/module/data_manager/../../libs/include/data_manager/export_global.h
+-- Up-to-date: D:/a/libs/libs/module/data_manager/../../libs/include/data_manager

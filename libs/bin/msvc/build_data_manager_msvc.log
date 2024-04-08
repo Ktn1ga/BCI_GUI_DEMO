@@ -1,0 +1,153 @@
+-- The C compiler identification is MSVC 19.35.32217.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: data_manager
+-- current platform: Windows 
+-- current compiler: msvc
+-- libs in: D:/a/libs/libs/module/data_manager/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/data_manager/src
+-- SRCS:D:/a/libs/libs/module/data_manager/src/data_load_ebdf.cD:/a/libs/libs/module/data_manager/src/data_manager.cD:/a/libs/libs/module/data_manager/src/data_store_edbf.c
+-- 0.1.7
+-- 0.1.6
+-- new version: 0.1.7
+-- old version: 0.1.6
+-- new version found!
+-- extra_lib_path: D:/a/libs/libs/module/data_manager/../../libs/bin/msvc
+-- extra_lib_path: D:/a/libs/libs/module/data_manager/../../libs/bin/msvc
+-- INCLUDE_path: D:/a/libs/libs/module/data_manager/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+-- Configuring done (22.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/data_manager/build
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule D:/a/libs/libs/module/data_manager/CMakeLists.txt
+  data_load_ebdf.c
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(552,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(601,71): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(697,21): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(900,21): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1319,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1320,29): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1321,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1402,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1403,30): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1404,30): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1406,30): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1407,29): warning C4244: '+=': conversion from 'double' to '__int64', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1408,26): warning C4244: '+=': conversion from 'double' to '__int64', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1434,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1475,8): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1557,25): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1853,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(1935,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(2065,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(2513,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(2565,23): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3034,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3093,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3119,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3159,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3217,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3255,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3293,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3331,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3388,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3412,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3432,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3515,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3613,11): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3753,11): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3917,7): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(3962,7): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(4137,7): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(4177,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(4227,7): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(4412,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_load_ebdf.c(4418,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+  data_manager.c
+D:\a\libs\libs\module\data_manager\src\data_manager.c(116,52): warning C4244: 'function': conversion from 'double' to 'size_t', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(128,74): warning C4244: 'function': conversion from 'double' to 'size_t', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(129,50): warning C4244: 'function': conversion from 'double' to 'size_t', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(213,4): warning C4013: 'osal_sleep_ms' undefined; assuming extern returning int [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(303,63): warning C4133: 'function': incompatible types - from 'int *' to 'const char *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(304,63): warning C4133: 'function': incompatible types - from 'int *' to 'const char *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(475,21): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(482,21): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(497,21): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(513,21): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(685,24): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(772,23): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(782,21): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(791,27): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(804,92): warning C4047: '=': 'char **' differs in levels of indirection from 'char *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(811,31): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(817,88): warning C4047: '=': 'char **' differs in levels of indirection from 'char *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(824,31): warning C4047: 'return': 'data_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(546,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(547,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(548,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(550,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(551,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(552,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(559,21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(560,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(561,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(564,21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(565,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(566,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(575,21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(576,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(577,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(580,21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(581,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(582,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(590,21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(591,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(592,21): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(693,31): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(1082,22): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_manager.c(1094,17): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+  data_store_edbf.c
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(307,41): warning C4047: '!=': 'int' differs in levels of indirection from 'void *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(313,43): warning C4047: '!=': 'int' differs in levels of indirection from 'void *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(320,37): warning C4047: '==': 'int' differs in levels of indirection from 'void *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(320,62): warning C4047: '==': 'int' differs in levels of indirection from 'void *' [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1116,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1158,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1384,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1436,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1464,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1600,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1659,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1685,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1725,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1783,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1821,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1859,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1897,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1954,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1978,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(1998,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(2081,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(2206,11): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(2346,11): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(2669,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(2675,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+D:\a\libs\libs\module\data_manager\src\data_store_edbf.c(2777,27): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\data_manager\build\data_manager.vcxproj]
+  Generating Code...
+     Creating library D:/a/libs/libs/module/data_manager/build/Debug/data_manager.lib and object D:/a/libs/libs/module/data_manager/build/Debug/data_manager.exp
+  data_manager.vcxproj -> D:\a\libs\libs\module\data_manager\build\Debug\data_manager.dll
+  Building Custom Rule D:/a/libs/libs/module/data_manager/CMakeLists.txt
+  1>
+  -- Install configuration: "Debug"
+  -- Installing: D:/a/libs/libs/module/data_manager/../../libs/bin/msvc/data_manager.lib
+  -- Installing: D:/a/libs/libs/module/data_manager/../../libs/bin/msvc/data_manager.dll
+  -- Installing: D:/a/libs/libs/module/data_manager/../../libs/bin/msvc/data_manager_msvc_version.txt
+  -- Installing: D:/a/libs/libs/module/data_manager/../../libs/include/data_manager/data_manager.h
+  -- Installing: D:/a/libs/libs/module/data_manager/../../libs/include/data_manager/export_global.h
+  -- Up-to-date: D:/a/libs/libs/module/data_manager/../../libs/include/data_manager

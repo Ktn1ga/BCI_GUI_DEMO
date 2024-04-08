@@ -1,0 +1,35 @@
+CMake Warning:
+  Ignoring empty string ("") provided on the command line.
+
+
+-- The C compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: trial_manager
+-- current platform: Linux 
+-- libs in: /home/runner/work/libs/libs/module/trial_manager/../../libs
+-- SRC_DIRS:/home/runner/work/libs/libs/module/trial_manager/src
+-- SRCS:/home/runner/work/libs/libs/module/trial_manager/src/trial_manager.c
+-- 0.0.3
+-- 0.0.0
+-- new version: 0.0.3
+-- old version: 0.0.0
+-- new version found!
+-- extra_lib_path: /home/runner/work/libs/libs/module/trial_manager/../../libs/bin/linux
+-- extra_lib_path: /home/runner/work/libs/libs/module/trial_manager/../../libs/bin/linux
+-- INCLUDE_path: /home/runner/work/libs/libs/module/trial_manager/include
+-- INCLUDE_path: /home/runner/work/libs/libs/libs/include
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/work/libs/libs/module/trial_manager/build
+[ 50%] Building C object CMakeFiles/trial_manager.dir/src/trial_manager.c.o
+/home/runner/work/libs/libs/module/trial_manager/src/trial_manager.c:6:10: fatal error: cJSON/cJSON.h: No such file or directory
+    6 | #include "cJSON/cJSON.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/trial_manager.dir/build.make:76: CMakeFiles/trial_manager.dir/src/trial_manager.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/trial_manager.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

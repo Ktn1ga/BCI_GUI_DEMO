@@ -1,0 +1,36 @@
+-- The C compiler identification is MSVC 19.35.32217.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- compiler name: msvc
+CMake Error at CMakeLists.txt:26 (add_subdirectory):
+  add_subdirectory given source "pthread-win32" which is not an existing
+  directory.
+
+
+-- name: osal
+-- current platform: Windows 
+-- current compiler: msvc
+-- libs in: D:/a/libs/libs/module/osal/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/osal/src
+-- SRCS:D:/a/libs/libs/module/osal/src/osal_com.cD:/a/libs/libs/module/osal/src/osal_common.cD:/a/libs/libs/module/osal/src/osal_ringbuffer.cD:/a/libs/libs/module/osal/src/osal_socket.cD:/a/libs/libs/module/osal/src/osal_thread.c
+-- 0.0.6
+-- 0.0.5
+-- new version: 0.0.6
+-- old version: 0.0.5
+-- new version found!
+-- extra_lib_path: 
+-- extra_lib_path: 
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:59 (message):
+  Include directory 'D:/a/libs/libs/module/osal/pthread-win32' is not a
+  directory.
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:251 (__add_include_dirs)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:36 (project_share_lib)
+
+
+-- Configuring incomplete, errors occurred!

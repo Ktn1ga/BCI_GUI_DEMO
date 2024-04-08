@@ -1,0 +1,68 @@
+-- The C compiler identification is MSVC 19.35.32217.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: device_manager
+-- current platform: Windows 
+-- current compiler: msvc
+-- libs in: D:/a/libs/libs/module/device_manager/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/device_manager/src
+-- SRCS:D:/a/libs/libs/module/device_manager/src/device_manager.c
+-- 0.0.2
+-- 0.0.2
+-- new version: 0.0.2
+-- old version: 0.0.2
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:242 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- extra_lib_path: 
+-- extra_lib_path: 
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:265 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Configuring done (59.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/device_manager/build
+MSBuild version 17.6.3+07e294721 for .NET Framework
+
+  Checking Build System
+  Building Custom Rule D:/a/libs/libs/module/device_manager/CMakeLists.txt
+  device_manager.c
+D:\a\libs\libs\module\device_manager\src\device_manager.c(50,59): warning C4047: 'function': 'char *const ' differs in levels of indirection from 'char (*)[128]' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(50,14): warning C4024: 'snprintf': different types for formal and actual parameter 1 [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(74,55): warning C4047: 'function': 'char *const ' differs in levels of indirection from 'char (*)[128]' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(74,14): warning C4024: 'snprintf': different types for formal and actual parameter 1 [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(97,54): warning C4047: 'function': 'char *const ' differs in levels of indirection from 'char (*)[128]' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(97,14): warning C4024: 'snprintf': different types for formal and actual parameter 1 [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(120,57): warning C4047: 'function': 'char *const ' differs in levels of indirection from 'char (*)[128]' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(120,14): warning C4024: 'snprintf': different types for formal and actual parameter 1 [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(145,17): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(145,17): message : consider using '%zd' in the format string [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(145,17): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'size_t' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(145,17): message : consider using '%zd' in the format string [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(154,18): warning C4047: 'return': 'device_handle_t' differs in levels of indirection from 'int' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(156,5): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'size_t' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(156,5): message : consider using '%zd' in the format string [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(156,5): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'size_t' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(156,5): message : consider using '%zd' in the format string [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(164,36): warning C4312: 'type cast': conversion from 'int' to 'device_handle_t' of greater size [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(157,9): warning C4047: 'initializing': 'int' differs in levels of indirection from 'device_handle_t' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(169,30): warning C4311: 'type cast': pointer truncation from 'device_handle_t' to 'int' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(179,30): warning C4311: 'type cast': pointer truncation from 'device_handle_t' to 'int' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+D:\a\libs\libs\module\device_manager\src\device_manager.c(189,30): warning C4311: 'type cast': pointer truncation from 'device_handle_t' to 'int' [D:\a\libs\libs\module\device_manager\build\device_manager.vcxproj]
+     Creating library D:/a/libs/libs/module/device_manager/build/Debug/device_manager.lib and object D:/a/libs/libs/module/device_manager/build/Debug/device_manager.exp
+  device_manager.vcxproj -> D:\a\libs\libs\module\device_manager\build\Debug\device_manager.dll
+  Building Custom Rule D:/a/libs/libs/module/device_manager/CMakeLists.txt
+  -- Install configuration: "Debug"

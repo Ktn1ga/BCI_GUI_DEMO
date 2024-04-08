@@ -1,0 +1,100 @@
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/ProgramData/chocolatey/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- compiler name: mingw
+-- name: osal
+-- current platform: Windows 
+-- current compiler: mingw
+-- libs in: D:/a/libs/libs/module/osal/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/osal/src
+-- SRCS:D:/a/libs/libs/module/osal/src/osal_com.cD:/a/libs/libs/module/osal/src/osal_common.cD:/a/libs/libs/module/osal/src/osal_ringbuffer.cD:/a/libs/libs/module/osal/src/osal_socket.cD:/a/libs/libs/module/osal/src/osal_thread.c
+-- 0.0.9
+-- 0.0.9
+-- new version: 0.0.9
+-- old version: 0.0.9
+-- extra_lib_path: D:/a/libs/libs/module/osal/../../libs/bin/mingw
+-- extra_lib_path: D:/a/libs/libs/module/osal/../../libs/bin/mingw
+-- INCLUDE_path: D:/a/libs/libs/module/osal/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:260 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:36 (project_share_lib)
+
+
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:283 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:36 (project_share_lib)
+
+
+-- Looking for pthread_create
+-- Looking for pthread_create - found
+-- pthread library is supported.
+-- Configuring done (22.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/a/libs/libs/module/osal/build
+[ 16%] Building C object CMakeFiles/osal.dir/src/osal_com.c.obj
+D:\a\libs\libs\module\osal\src\osal_com.c: In function 'com_init':
+D:\a\libs\libs\module\osal\src\osal_com.c:13:20: warning: passing argument 1 of 'StringCbPrintfA' from incompatible pointer type [-Wincompatible-pointer-types]
+   13 |     StringCbPrintf(comname_L, 200, L"\\\\.\\COM%d", atoi(com_name));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    wchar_t * {aka short unsigned int *}
+In file included from D:/a/libs/libs/module/osal/include/osal_com.h:9,
+                 from D:\a\libs\libs\module\osal\src\osal_com.c:3:
+c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\strsafe.h:556:43: note: expected 'STRSAFE_LPSTR' {aka 'char *'} but argument is of type 'wchar_t *' {aka 'short unsigned int *'}
+  556 | STRSAFEAPIV StringCbPrintfA(STRSAFE_LPSTR pszDest,size_t cbDest,STRSAFE_LPCSTR pszFormat,...);
+      |                             ~~~~~~~~~~~~~~^~~~~~~
+D:\a\libs\libs\module\osal\src\osal_com.c:13:36: warning: passing argument 3 of 'StringCbPrintfA' from incompatible pointer type [-Wincompatible-pointer-types]
+   13 |     StringCbPrintf(comname_L, 200, L"\\\\.\\COM%d", atoi(com_name));
+      |                                    ^~~~~~~~~~~~~~~
+      |                                    |
+      |                                    short unsigned int *
+In file included from D:/a/libs/libs/module/osal/include/osal_com.h:9,
+                 from D:\a\libs\libs\module\osal\src\osal_com.c:3:
+c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\strsafe.h:556:80: note: expected 'STRSAFE_LPCSTR' {aka 'const char *'} but argument is of type 'short unsigned int *'
+  556 | STRSAFEAPIV StringCbPrintfA(STRSAFE_LPSTR pszDest,size_t cbDest,STRSAFE_LPCSTR pszFormat,...);
+      |                                                                 ~~~~~~~~~~~~~~~^~~~~~~~~
+D:\a\libs\libs\module\osal\src\osal_com.c:17:24: warning: passing argument 1 of 'CreateFileA' from incompatible pointer type [-Wincompatible-pointer-types]
+   17 |     hComm = CreateFile(comname_L,            //port name
+      |                        ^~~~~~~~~
+      |                        |
+      |                        wchar_t * {aka short unsigned int *}
+In file included from c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\winbase.h:18,
+                 from c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\windows.h:70,
+                 from D:/a/libs/libs/module/osal/include/osal_com.h:8,
+                 from D:\a\libs\libs\module\osal\src\osal_com.c:3:
+c:\programdata\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\include\fileapi.h:53:48: note: expected 'LPCSTR' {aka 'const char *'} but argument is of type 'wchar_t *' {aka 'short unsigned int *'}
+   53 |   WINBASEAPI HANDLE WINAPI CreateFileA (LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile);
+      |                                         ~~~~~~~^~~~~~~~~~
+D:\a\libs\libs\module\osal\src\osal_com.c:109:12: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  109 |     return (int)hComm;
+      |            ^
+D:\a\libs\libs\module\osal\src\osal_com.c: In function 'com_close':
+D:\a\libs\libs\module\osal\src\osal_com.c:329:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  329 |     PORT com_port = (PORT)fd;
+      |                     ^
+D:\a\libs\libs\module\osal\src\osal_com.c: In function 'com_send':
+D:\a\libs\libs\module\osal\src\osal_com.c:360:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  360 |     PORT com_port = (PORT)fd;
+      |                     ^
+D:\a\libs\libs\module\osal\src\osal_com.c: In function 'com_recv':
+D:\a\libs\libs\module\osal\src\osal_com.c:427:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  427 |     PORT com_port = (PORT)fd;
+      |                     ^
+[ 33%] Building C object CMakeFiles/osal.dir/src/osal_common.c.obj
+[ 50%] Building C object CMakeFiles/osal.dir/src/osal_ringbuffer.c.obj
+[ 66%] Building C object CMakeFiles/osal.dir/src/osal_socket.c.obj
+[ 83%] Building C object CMakeFiles/osal.dir/src/osal_thread.c.obj
+[100%] Linking C shared library libosal.dll
+[100%] Built target osal
+Install the project...
+-- Install configuration: ""

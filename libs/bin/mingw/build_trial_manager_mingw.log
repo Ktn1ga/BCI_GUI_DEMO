@@ -1,0 +1,44 @@
+-- The C compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/ProgramData/chocolatey/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: trial_manager
+-- current platform: Windows 
+-- current compiler: mingw
+-- libs in: D:/a/libs/libs/module/trial_manager/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/trial_manager/src
+-- SRCS:D:/a/libs/libs/module/trial_manager/src/trial_manager.c
+-- 0.0.3
+-- 0.0.3
+-- new version: 0.0.3
+-- old version: 0.0.3
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:260 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- extra_lib_path: D:/a/libs/libs/module/trial_manager/../../libs/bin/mingw
+-- extra_lib_path: D:/a/libs/libs/module/trial_manager/../../libs/bin/mingw
+-- INCLUDE_path: D:/a/libs/libs/module/trial_manager/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:283 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Configuring done (6.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/trial_manager/build
+[ 50%] Building C object CMakeFiles/trial_manager.dir/src/trial_manager.c.obj
+[100%] Linking C shared library libtrial_manager.dll
+[100%] Built target trial_manager
+Install the project...
+-- Install configuration: ""

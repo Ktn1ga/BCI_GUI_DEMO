@@ -1,0 +1,55 @@
+-- The C compiler identification is MSVC 19.35.32217.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: trial_manager
+-- current platform: Windows 
+-- current compiler: msvc
+-- libs in: D:/a/libs/libs/module/trial_manager/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/trial_manager/src
+-- SRCS:D:/a/libs/libs/module/trial_manager/src/trial_manager.c
+-- 0.0.3
+-- 0.0.3
+-- new version: 0.0.3
+-- old version: 0.0.3
+-- extra_lib_path: D:/a/libs/libs/module/trial_manager/../../libs/bin/msvc
+-- extra_lib_path: D:/a/libs/libs/module/trial_manager/../../libs/bin/msvc
+-- INCLUDE_path: D:/a/libs/libs/module/trial_manager/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+-- Configuring done (37.4s)
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:260 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:283 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Generating done (0.0s)
+-- Build files have been written to: D:/a/libs/libs/module/trial_manager/build
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule D:/a/libs/libs/module/trial_manager/CMakeLists.txt
+  trial_manager.c
+D:\a\libs\libs\module\trial_manager\src\trial_manager.c(23,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\trial_manager\build\trial_manager.vcxproj]
+D:\a\libs\libs\module\trial_manager\src\trial_manager.c(72,9): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\trial_manager\build\trial_manager.vcxproj]
+D:\a\libs\libs\module\trial_manager\src\trial_manager.c(73,9): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\trial_manager\build\trial_manager.vcxproj]
+D:\a\libs\libs\module\trial_manager\src\trial_manager.c(74,9): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\trial_manager\build\trial_manager.vcxproj]
+D:\a\libs\libs\module\trial_manager\src\trial_manager.c(75,9): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\libs\libs\module\trial_manager\build\trial_manager.vcxproj]
+D:\a\libs\libs\module\trial_manager\src\trial_manager.c(93,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\trial_manager\build\trial_manager.vcxproj]
+     Creating library D:/a/libs/libs/module/trial_manager/build/Debug/trial_manager.lib and object D:/a/libs/libs/module/trial_manager/build/Debug/trial_manager.exp
+  trial_manager.vcxproj -> D:\a\libs\libs\module\trial_manager\build\Debug\trial_manager.dll
+  Building Custom Rule D:/a/libs/libs/module/trial_manager/CMakeLists.txt
+  1>
+  -- Install configuration: "Debug"

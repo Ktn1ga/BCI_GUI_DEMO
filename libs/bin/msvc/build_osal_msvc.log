@@ -1,0 +1,97 @@
+-- The C compiler identification is MSVC 19.35.32217.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- compiler name: msvc
+-- The CXX compiler identification is MSVC 19.35.32217.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- TARGET_ARCH: x86_64
+-- name: osal
+-- current platform: Windows 
+-- current compiler: msvc
+-- libs in: D:/a/libs/libs/module/osal/../../libs
+-- SRC_DIRS:D:/a/libs/libs/module/osal/src
+-- SRCS:D:/a/libs/libs/module/osal/src/osal_com.cD:/a/libs/libs/module/osal/src/osal_common.cD:/a/libs/libs/module/osal/src/osal_ringbuffer.cD:/a/libs/libs/module/osal/src/osal_socket.cD:/a/libs/libs/module/osal/src/osal_thread.c
+-- 0.0.9
+-- 0.0.9
+-- new version: 0.0.9
+-- old version: 0.0.9
+-- extra_lib_path: D:/a/libs/libs/module/osal/../../libs/bin/msvc
+-- extra_lib_path: D:/a/libs/libs/module/osal/../../libs/bin/msvc
+-- INCLUDE_path: D:/a/libs/libs/module/osal/pthread-win32
+-- INCLUDE_path: D:/a/libs/libs/module/osal/include
+-- INCLUDE_path: D:/a/libs/libs/libs/include
+-- Configuring done (44.0s)
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:260 (message):
+  new version not found!
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:36 (project_share_lib)
+
+
+CMake Warning at D:/a/libs/libs/libs/tools/build_lib.cmake:283 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  D:/a/libs/libs/libs/tools/build_lib.cmake:128 (_share_lib_add)
+  D:/a/libs/libs/libs/tools/build_lib.cmake:160 (share_lib_add)
+  CMakeLists.txt:36 (project_share_lib)
+
+
+-- Generating done (0.1s)
+-- Build files have been written to: D:/a/libs/libs/module/osal/build
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule D:/a/libs/libs/module/osal/pthread-win32/CMakeLists.txt
+  pthread-JMP.c
+     Creating library D:/a/libs/libs/module/osal/build/pthread-win32/Debug/pthreadVC3.lib and object D:/a/libs/libs/module/osal/build/pthread-win32/Debug/pthreadVC3.exp
+  pthreadVC3.vcxproj -> D:\a\libs\libs\module\osal\build\pthread-win32\Debug\pthreadVC3.dll
+  Building Custom Rule D:/a/libs/libs/module/osal/CMakeLists.txt
+  osal_com.c
+D:\a\libs\libs\module\osal\src\osal_com.c(13,20): warning C4133: 'function': incompatible types - from 'wchar_t [100]' to 'STRSAFE_LPSTR' [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_com.c(13,36): warning C4133: 'function': incompatible types - from 'unsigned short [10]' to 'STRSAFE_LPCSTR' [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_com.c(17,24): warning C4133: 'function': incompatible types - from 'wchar_t [100]' to 'LPCSTR' [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_com.c(109,22): warning C4311: 'type cast': pointer truncation from 'HANDLE' to 'int' [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_com.c(329,29): warning C4312: 'type cast': conversion from 'int' to 'PORT' of greater size [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_com.c(360,29): warning C4312: 'type cast': conversion from 'int' to 'PORT' of greater size [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_com.c(427,29): warning C4312: 'type cast': conversion from 'int' to 'PORT' of greater size [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+  osal_common.c
+  osal_ringbuffer.c
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(153,21): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type '__int64' [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(153,21): message : consider using '%lld' in the format string [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(153,21): message : consider using '%Id' in the format string [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(153,21): message : consider using '%I64d' in the format string [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(154,21): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type '__int64' [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(154,21): message : consider using '%lld' in the format string [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(154,21): message : consider using '%Id' in the format string [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_ringbuffer.c(154,21): message : consider using '%I64d' in the format string [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+  osal_socket.c
+D:\a\libs\libs\module\osal\src\osal_socket.c(34,30): warning C4244: 'initializing': conversion from 'SOCKET' to 'unsigned int', possible loss of data [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_socket.c(52,12): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_socket.c(62,12): warning C4244: 'return': conversion from 'SOCKET' to 'int', possible loss of data [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_socket.c(88,34): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_socket.c(94,36): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_socket.c(99,34): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+D:\a\libs\libs\module\osal\src\osal_socket.c(104,30): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\libs\libs\module\osal\build\osal.vcxproj]
+  osal_thread.c
+  Generating Code...
+     Creating library D:/a/libs/libs/module/osal/build/Debug/osal.lib and object D:/a/libs/libs/module/osal/build/Debug/osal.exp
+  osal.vcxproj -> D:\a\libs\libs\module\osal\build\Debug\osal.dll
+  Building Custom Rule D:/a/libs/libs/module/osal/pthread-win32/CMakeLists.txt
+  pthread-EH.cpp
+     Creating library D:/a/libs/libs/module/osal/build/pthread-win32/Debug/pthreadVCE3.lib and object D:/a/libs/libs/module/osal/build/pthread-win32/Debug/pthreadVCE3.exp
+  pthreadVCE3.vcxproj -> D:\a\libs\libs\module\osal\build\pthread-win32\Debug\pthreadVCE3.dll
+  Building Custom Rule D:/a/libs/libs/module/osal/pthread-win32/CMakeLists.txt
+  pthread-EH.cpp
+     Creating library D:/a/libs/libs/module/osal/build/pthread-win32/Debug/pthreadVSE3.lib and object D:/a/libs/libs/module/osal/build/pthread-win32/Debug/pthreadVSE3.exp
+  pthreadVSE3.vcxproj -> D:\a\libs\libs\module\osal\build\pthread-win32\Debug\pthreadVSE3.dll
+  Building Custom Rule D:/a/libs/libs/module/osal/CMakeLists.txt
+  1>
+  -- Install configuration: "Debug"

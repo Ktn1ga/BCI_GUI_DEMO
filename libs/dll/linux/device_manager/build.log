@@ -1,0 +1,145 @@
+CMake Warning:
+  Ignoring empty string ("") provided on the command line.
+
+
+-- The C compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- name: device_manager
+-- current platform: Linux 
+-- libs in: /home/runner/work/libs/libs/module/device_manager/../../libs
+-- SRC_DIRS:/home/runner/work/libs/libs/module/device_manager/src
+-- SRCS:/home/runner/work/libs/libs/module/device_manager/src/device_manager.c
+-- 0.0.2
+-- 0.0.2
+-- new version: 0.0.2
+-- old version: 0.0.2
+CMake Warning at /home/runner/work/libs/libs/libs/tools/build_lib.cmake:242 (message):
+  new version not found!
+Call Stack (most recent call first):
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- extra_lib_path: 
+-- extra_lib_path: 
+CMake Warning at /home/runner/work/libs/libs/libs/tools/build_lib.cmake:265 (message):
+  no new version found! will not install
+Call Stack (most recent call first):
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:112 (_share_lib_add)
+  /home/runner/work/libs/libs/libs/tools/build_lib.cmake:144 (share_lib_add)
+  CMakeLists.txt:8 (project_share_lib)
+
+
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/work/libs/libs/module/device_manager/build
+[ 50%] Building C object CMakeFiles/device_manager.dir/src/device_manager.c.o
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘general_device_register’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:50:14: warning: passing argument 1 of ‘snprintf’ from incompatible pointer type [-Wincompatible-pointer-types]
+   50 |     snprintf(&(s_impls_path[DEVICE_TYPE_GENERAL][id].path), MAX_PATH_LENGTH, "%s/%02d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from /home/runner/work/libs/libs/module/device_manager/src/device_manager.c:12:
+/usr/include/stdio.h:378:39: note: expected ‘char * restrict’ but argument is of type ‘char (*)[128]’
+  378 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                      ~~~~~~~~~~~~~~~~~^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘eeg_device_register’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:74:14: warning: passing argument 1 of ‘snprintf’ from incompatible pointer type [-Wincompatible-pointer-types]
+   74 |     snprintf(&(s_impls_path[DEVICE_TYPE_EEG][id].path), MAX_PATH_LENGTH, "%s/%d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from /home/runner/work/libs/libs/module/device_manager/src/device_manager.c:12:
+/usr/include/stdio.h:378:39: note: expected ‘char * restrict’ but argument is of type ‘char (*)[128]’
+  378 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                      ~~~~~~~~~~~~~~~~~^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘vr_device_register’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:97:14: warning: passing argument 1 of ‘snprintf’ from incompatible pointer type [-Wincompatible-pointer-types]
+   97 |     snprintf(&(s_impls_path[DEVICE_TYPE_VR][id].path), MAX_PATH_LENGTH, "%s/%d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from /home/runner/work/libs/libs/module/device_manager/src/device_manager.c:12:
+/usr/include/stdio.h:378:39: note: expected ‘char * restrict’ but argument is of type ‘char (*)[128]’
+  378 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                      ~~~~~~~~~~~~~~~~~^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘robot_device_register’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:120:14: warning: passing argument 1 of ‘snprintf’ from incompatible pointer type [-Wincompatible-pointer-types]
+  120 |     snprintf(&(s_impls_path[DEVICE_TYPE_ROBOT][id].path), MAX_PATH_LENGTH, "%s/%02d", base_path, id);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |
+      |              char (*)[128]
+In file included from /home/runner/work/libs/libs/module/device_manager/src/device_manager.c:12:
+/usr/include/stdio.h:378:39: note: expected ‘char * restrict’ but argument is of type ‘char (*)[128]’
+  378 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                      ~~~~~~~~~~~~~~~~~^~~
+In file included from /home/runner/work/libs/libs/module/device_manager/src/device_manager.c:17:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘device_open’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:23:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   23 | #define TAG "device_manager"
+      |             ^~~~~~~~~~~~~~~~
+/home/runner/work/libs/libs/libs/include/osal/osal_log.h:24:36: note: in definition of macro ‘OSAL_LOG’
+   24 | #define OSAL_LOG(TAG, ...) {printf(TAG ": " __VA_ARGS__); printf("\n");}
+      |                                    ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:145:26: note: in expansion of macro ‘TAG’
+  145 |                 OSAL_LOG(TAG, "fount %d %d: %s", i, j, path);
+      |                          ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:23:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   23 | #define TAG "device_manager"
+      |             ^~~~~~~~~~~~~~~~
+/home/runner/work/libs/libs/libs/include/osal/osal_log.h:24:36: note: in definition of macro ‘OSAL_LOG’
+   24 | #define OSAL_LOG(TAG, ...) {printf(TAG ": " __VA_ARGS__); printf("\n");}
+      |                                    ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:145:26: note: in expansion of macro ‘TAG’
+  145 |                 OSAL_LOG(TAG, "fount %d %d: %s", i, j, path);
+      |                          ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:154:16: warning: returning ‘int’ from a function with return type ‘device_handle_t’ {aka ‘void *’} makes pointer from integer without a cast [-Wint-conversion]
+  154 |         return -1;
+      |                ^
+In file included from /home/runner/work/libs/libs/module/device_manager/src/device_manager.c:17:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:23:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   23 | #define TAG "device_manager"
+      |             ^~~~~~~~~~~~~~~~
+/home/runner/work/libs/libs/libs/include/osal/osal_log.h:24:36: note: in definition of macro ‘OSAL_LOG’
+   24 | #define OSAL_LOG(TAG, ...) {printf(TAG ": " __VA_ARGS__); printf("\n");}
+      |                                    ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:156:14: note: in expansion of macro ‘TAG’
+  156 |     OSAL_LOG(TAG, "fount registered device: %s, i=%d, j=%d", path, i, j);
+      |              ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:23:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   23 | #define TAG "device_manager"
+      |             ^~~~~~~~~~~~~~~~
+/home/runner/work/libs/libs/libs/include/osal/osal_log.h:24:36: note: in definition of macro ‘OSAL_LOG’
+   24 | #define OSAL_LOG(TAG, ...) {printf(TAG ": " __VA_ARGS__); printf("\n");}
+      |                                    ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:156:14: note: in expansion of macro ‘TAG’
+  156 |     OSAL_LOG(TAG, "fount registered device: %s, i=%d, j=%d", path, i, j);
+      |              ^~~
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:157:19: warning: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+  157 |     int _handle = (device_handle_t)((i << HANDLE_TYPE_OFFSET) | (j & HANDLE_ID_MASK));
+      |                   ^
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:164:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  164 |     return (device_handle_t)_handle;
+      |            ^
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘device_read’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:169:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  169 |     int _handle = (int)handle;
+      |                   ^
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘device_write’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:179:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  179 |     int _handle = (int)handle;
+      |                   ^
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c: In function ‘device_control’:
+/home/runner/work/libs/libs/module/device_manager/src/device_manager.c:189:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  189 |     int _handle = (int)handle;
+      |                   ^
+[100%] Linking C shared library libdevice_manager.so
+[100%] Built target device_manager
+Install the project...
+-- Install configuration: ""
